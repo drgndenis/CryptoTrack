@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		E217EE0A2B18952F00EAC2DE /* CryptoTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE092B18952F00EAC2DE /* CryptoTrackApp.swift */; };
-		E217EE0C2B18952F00EAC2DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE0B2B18952F00EAC2DE /* ContentView.swift */; };
 		E217EE112B18953000EAC2DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E217EE102B18953000EAC2DE /* Preview Assets.xcassets */; };
 		E217EE1B2B189D1A00EAC2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E217EE1A2B189D1A00EAC2DE /* Assets.xcassets */; };
 		E217EE1D2B189D5F00EAC2DE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE1C2B189D5F00EAC2DE /* Color.swift */; };
+		E217EE2C2B18C49C00EAC2DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE2B2B18C49C00EAC2DE /* HomeView.swift */; };
+		E217EE302B18C4E200EAC2DE /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE2F2B18C4E200EAC2DE /* CircleButtonView.swift */; };
+		E217EE322B18F97B00EAC2DE /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE312B18F97B00EAC2DE /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E217EE062B18952F00EAC2DE /* CryptoTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E217EE092B18952F00EAC2DE /* CryptoTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackApp.swift; sourceTree = "<group>"; };
-		E217EE0B2B18952F00EAC2DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E217EE102B18953000EAC2DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E217EE1A2B189D1A00EAC2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Resources/Assets.xcassets; sourceTree = "<group>"; };
 		E217EE1C2B189D5F00EAC2DE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E217EE2B2B18C49C00EAC2DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E217EE2F2B18C4E200EAC2DE /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		E217EE312B18F97B00EAC2DE /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,6 @@
 				E217EE1E2B189D6200EAC2DE /* Extensions */,
 				E217EE242B189FEE00EAC2DE /* Services */,
 				E217EE252B189FF700EAC2DE /* Utilities */,
-				E217EE0B2B18952F00EAC2DE /* ContentView.swift */,
 				E217EE1A2B189D1A00EAC2DE /* Assets.xcassets */,
 				E217EE0F2B18953000EAC2DE /* Preview Content */,
 			);
@@ -85,6 +88,7 @@
 		E217EE1F2B189FA100EAC2DE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E217EE2D2B18C4A600EAC2DE /* Components */,
 				E217EE202B189FA500EAC2DE /* Home */,
 				E217EE262B18A04800EAC2DE /* Detail */,
 				E217EE292B18A0D300EAC2DE /* Settings */,
@@ -111,6 +115,7 @@
 		E217EE222B189FB600EAC2DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E217EE2B2B18C49C00EAC2DE /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +169,23 @@
 			children = (
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		E217EE2D2B18C4A600EAC2DE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E217EE2E2B18C4D300EAC2DE /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E217EE2E2B18C4D300EAC2DE /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				E217EE2F2B18C4E200EAC2DE /* CircleButtonView.swift */,
+				E217EE312B18F97B00EAC2DE /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E217EE0C2B18952F00EAC2DE /* ContentView.swift in Sources */,
+				E217EE302B18C4E200EAC2DE /* CircleButtonView.swift in Sources */,
+				E217EE2C2B18C49C00EAC2DE /* HomeView.swift in Sources */,
 				E217EE0A2B18952F00EAC2DE /* CryptoTrackApp.swift in Sources */,
 				E217EE1D2B189D5F00EAC2DE /* Color.swift in Sources */,
+				E217EE322B18F97B00EAC2DE /* CircleButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -354,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -380,6 +404,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +434,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
