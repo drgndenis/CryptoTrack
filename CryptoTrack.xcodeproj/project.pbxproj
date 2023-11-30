@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		E217EE0A2B18952F00EAC2DE /* CryptoTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE092B18952F00EAC2DE /* CryptoTrackApp.swift */; };
 		E217EE0C2B18952F00EAC2DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE0B2B18952F00EAC2DE /* ContentView.swift */; };
-		E217EE0E2B18953000EAC2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E217EE0D2B18953000EAC2DE /* Assets.xcassets */; };
 		E217EE112B18953000EAC2DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E217EE102B18953000EAC2DE /* Preview Assets.xcassets */; };
+		E217EE1B2B189D1A00EAC2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E217EE1A2B189D1A00EAC2DE /* Assets.xcassets */; };
+		E217EE1D2B189D5F00EAC2DE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E217EE1C2B189D5F00EAC2DE /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E217EE062B18952F00EAC2DE /* CryptoTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E217EE092B18952F00EAC2DE /* CryptoTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackApp.swift; sourceTree = "<group>"; };
 		E217EE0B2B18952F00EAC2DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E217EE0D2B18953000EAC2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E217EE102B18953000EAC2DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E217EE1A2B189D1A00EAC2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Resources/Assets.xcassets; sourceTree = "<group>"; };
+		E217EE1C2B189D5F00EAC2DE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,13 @@
 			isa = PBXGroup;
 			children = (
 				E217EE092B18952F00EAC2DE /* CryptoTrackApp.swift */,
+				E217EE1F2B189FA100EAC2DE /* Core */,
+				E217EE232B189FE500EAC2DE /* Models */,
+				E217EE1E2B189D6200EAC2DE /* Extensions */,
+				E217EE242B189FEE00EAC2DE /* Services */,
+				E217EE252B189FF700EAC2DE /* Utilities */,
 				E217EE0B2B18952F00EAC2DE /* ContentView.swift */,
-				E217EE0D2B18953000EAC2DE /* Assets.xcassets */,
+				E217EE1A2B189D1A00EAC2DE /* Assets.xcassets */,
 				E217EE0F2B18953000EAC2DE /* Preview Content */,
 			);
 			path = CryptoTrack;
@@ -65,6 +72,98 @@
 				E217EE102B18953000EAC2DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E217EE1E2B189D6200EAC2DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E217EE1C2B189D5F00EAC2DE /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E217EE1F2B189FA100EAC2DE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E217EE202B189FA500EAC2DE /* Home */,
+				E217EE262B18A04800EAC2DE /* Detail */,
+				E217EE292B18A0D300EAC2DE /* Settings */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E217EE202B189FA500EAC2DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E217EE222B189FB600EAC2DE /* Views */,
+				E217EE212B189FB000EAC2DE /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E217EE212B189FB000EAC2DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E217EE222B189FB600EAC2DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E217EE232B189FE500EAC2DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E217EE242B189FEE00EAC2DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E217EE252B189FF700EAC2DE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E217EE262B18A04800EAC2DE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E217EE272B18A06E00EAC2DE /* Views */,
+				E217EE282B18A07200EAC2DE /* ViewModels */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E217EE272B18A06E00EAC2DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E217EE282B18A07200EAC2DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E217EE292B18A0D300EAC2DE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E217EE112B18953000EAC2DE /* Preview Assets.xcassets in Resources */,
-				E217EE0E2B18953000EAC2DE /* Assets.xcassets in Resources */,
+				E217EE1B2B189D1A00EAC2DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +238,7 @@
 			files = (
 				E217EE0C2B18952F00EAC2DE /* ContentView.swift in Sources */,
 				E217EE0A2B18952F00EAC2DE /* CryptoTrackApp.swift in Sources */,
+				E217EE1D2B189D5F00EAC2DE /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +375,11 @@
 				DEVELOPMENT_TEAM = 4HXT666CZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +404,11 @@
 				DEVELOPMENT_TEAM = 4HXT666CZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
