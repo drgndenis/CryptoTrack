@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct CryptoTrackApp: App {
+    @StateObject private var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 HomeView()
             }
+            .environmentObject(HomeViewModel())
         }
     }
 }
