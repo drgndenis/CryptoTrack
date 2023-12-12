@@ -35,16 +35,16 @@ class LocalFileManager {
     func getImage(imageName: String, folderName: String) -> UIImage? {
         guard
             let url = getURLForImage(imageName: imageName, folderName: folderName),
-            FileManager.default.fileExists(atPath: url.path(percentEncoded: true)) else {
+            FileManager.default.fileExists(atPath: url.path) else {
             return UIImage(systemName: "exclamationmark.triangle")
         }
         
-        return UIImage(contentsOfFile: url.path())
+        return UIImage(contentsOfFile: url.path)
     }
     
     private func createFolder(folderName: String) {
         guard let url = getURLForFolder(folderName: folderName) else { return }
-        if !FileManager.default.fileExists(atPath: url.path(percentEncoded: true)) {
+        if !FileManager.default.fileExists(atPath: url.path) {
             do {
                 try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
             } catch let error {
