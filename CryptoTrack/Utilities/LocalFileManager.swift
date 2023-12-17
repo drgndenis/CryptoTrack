@@ -36,7 +36,7 @@ class LocalFileManager {
         guard
             let url = getURLForImage(imageName: imageName, folderName: folderName),
             FileManager.default.fileExists(atPath: url.path) else {
-            return UIImage(systemName: "exclamationmark.triangle")
+            return nil
         }
         
         return UIImage(contentsOfFile: url.path)
