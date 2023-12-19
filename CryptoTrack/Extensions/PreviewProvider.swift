@@ -41,12 +41,6 @@ class DeveloperPreview {
        circulatingSupply: 18653043,
        totalSupply: 21000000,
        maxSupply: 21000000,
-       ath: 61712,
-       athChangePercentage: -0.97589,
-       athDate: "2021-03-13T20:49:26.606Z",
-       atl: 67.81,
-       atlChangePercentage: 90020.24075,
-       atlDate: "2013-07-06T00:00:00.000Z",
        lastUpdated: "2021-03-13T23:18:10.268Z",
        sparklineIn7D: SparklineIn7D(price: [
            54019.26878317463,
