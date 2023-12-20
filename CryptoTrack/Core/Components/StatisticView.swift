@@ -30,6 +30,7 @@ struct StatisticView: View {
             .foregroundStyle((stat.percentageChange ?? 0) >= 0 ? Color.theme.green : Color.theme.red)
             .opacity(stat.percentageChange == nil ? 0.0 : 1.0)
         }
+        .padding(4)
     }
 }
 
